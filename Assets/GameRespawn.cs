@@ -1,0 +1,23 @@
+using UnityEngine;
+
+public class GameRespawn : MonoBehaviour
+{
+    public float threshold;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        
+        if(transform.position.y < threshold)
+        {
+            transform.position = new Vector3(0.1f, 0.4099f, -97.83f);
+        }
+
+    }
+}
